@@ -14,9 +14,9 @@ public class sorteNoSorteio {
         Boolean loop = true;
         int phase = 0;
 
-        for (int i = 0; i < 16; i++) {
-            int numCompetitor = keymap.nextInt();
-            competitors.add(numCompetitor);
+        String input[] = keymap.nextLine().split(" ");
+        for (int i = 0; i < input.length; i++) {
+            competitors.add(Integer.parseInt(input[i]));
         }
 
         for (int i = 0; i < 4; i++) {

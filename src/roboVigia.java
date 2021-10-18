@@ -10,10 +10,14 @@ import static java.lang.Integer.parseInt;
 public class roboVigia {
 
     public static int updateStation(int station, int comand, int N) {
-        if (station == 1 && comand == -1) return N;
-        if (station == N && comand == 1) return 1;
-        if (comand == 1) return (station+1);
-        if (comand == -1) return (station-1);
+        if (station == 1 && comand == -1)
+            return N;
+        if (station == N && comand == 1)
+            return 1;
+        if (comand == 1)
+            return (station + 1);
+        if (comand == -1)
+            return (station - 1);
         return 1;
     }
 
@@ -34,9 +38,11 @@ public class roboVigia {
         int station = 1;
         int amountStation = 0;
         for (int i = 0; i < C; i++) {
-            if (station == E) amountStation++;
+            if (station == E)
+                amountStation++;
             station = updateStation(station, secondLineInt[i], N);
         }
+
         System.out.println(amountStation);
         sc.close();
     }

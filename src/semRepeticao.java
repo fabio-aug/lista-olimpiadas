@@ -9,8 +9,11 @@ import java.util.Scanner;
 public class semRepeticao {
     public static void main(String[] args) {
         Scanner keymap = new Scanner(System.in);
-        int n = keymap.nextInt();
-        int m = keymap.nextInt();
+
+        String input[] = keymap.nextLine().split(" ");
+        int n = Integer.parseInt(input[0]);
+        int m = Integer.parseInt(input[1]);
+
         int countEquals = 0;
         int count = 0;
         for (int i = n; i <= m; i++) {
