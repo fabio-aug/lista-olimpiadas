@@ -18,23 +18,23 @@ public class entregas {
         int numOrder = Integer.parseInt(input1[1]);
 
         String input2[] = keymap.nextLine().split(" ");
-        for (int j = 0; j < numHome; j++) {
-            home.add(Integer.parseInt(input2[j]));
+        for (int i = 0; i < numHome; i++) {
+            home.add(Integer.parseInt(input2[i]));
         }
 
         String input3[] = keymap.nextLine().split(" ");
-        for (int j = 0; j < numOrder; j++) {
-            order.add(Integer.parseInt(input3[j]));
+        for (int i = 0; i < numOrder; i++) {
+            order.add(Integer.parseInt(input3[i]));
         }
 
-        int i = 0, time = 0, position = 0;
-        while (i < numOrder) {
-            if (home.get(position) == order.get(i)) {
-                i++;
+        int count = 0, time = 0, position = 0;
+        while (count < numOrder) {
+            if (home.get(position) == order.get(count)) {
+                count++;
                 time--;
-            } else if (home.get(position) < order.get(i)) {
+            } else if (home.get(position) < order.get(count)) {
                 position++;
-            } else if (home.get(position) > order.get(i)) {
+            } else if (home.get(position) > order.get(count)) {
                 position--;
             }
             time++;
