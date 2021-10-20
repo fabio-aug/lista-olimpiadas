@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e40128a1-b6a9-45e2-b7da-ae5517c9a364" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/entregas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entregas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/jogandoNaPandemia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jogandoNaPandemia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/passaBolinha.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/roboVigia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/roboVigia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/semRepeticao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/semRepeticao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/smurfsDaSegundona.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/smurfsDaSegundona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sorteNoSorteio.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sorteNoSorteio.java" afterDir="false" />
-    </list>
+    <list default="true" id="e40128a1-b6a9-45e2-b7da-ae5517c9a364" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1634693376097</updated>
-      <workItem from="1634693378984" duration="465000" />
+      <workItem from="1634693378984" duration="963000" />
     </task>
     <servers />
   </component>
