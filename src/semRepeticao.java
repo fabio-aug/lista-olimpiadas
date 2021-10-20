@@ -10,7 +10,7 @@ public class semRepeticao {
     public static void main(String[] args) {
         Scanner keymap = new Scanner(System.in);
 
-        String input[] = keymap.nextLine().split(" ");
+        String[] input = keymap.nextLine().split(" ");
         int n = Integer.parseInt(input[0]);
         int m = Integer.parseInt(input[1]);
 
@@ -18,9 +18,9 @@ public class semRepeticao {
         int count = 0;
         for (int i = n; i <= m; i++) {
             count++;
-            Boolean equalNumber = true;
+            boolean equalNumber = true;
             String numberText = Integer.toString(i);
-            String initiaValue = "";
+            String initiaValue;
             for (int j = 0; j < numberText.length(); j++) {
                 if (!equalNumber) {
                     break;

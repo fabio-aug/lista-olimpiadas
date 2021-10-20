@@ -15,16 +15,16 @@ public class smurfsDaSegundona {
         String side;
     }
 
-    public static void main(String arg[]) {
+    public static void main(String[] arg) {
         Scanner sc = new Scanner(System.in);
 
         int N = sc.nextInt();
-        Boots vet[] = new Boots[N];
+        Boots[] vet = new Boots[N];
         sc.nextLine();
 
         for (int i = 0; i < N; i++) {
             vet[i] = new Boots();
-            String vet2[] = sc.nextLine().split(" ");
+            String[] vet2 = sc.nextLine().split(" ");
             vet[i].number = parseInt(vet2[0]);
             vet[i].side = vet2[1].toUpperCase(Locale.ROOT);
         }

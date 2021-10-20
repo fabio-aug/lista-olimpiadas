@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.Scanner;
 
 /*
@@ -13,23 +14,23 @@ public class entregas {
         ArrayList<Integer> home = new ArrayList<>();
         ArrayList<Integer> order = new ArrayList<>();
 
-        String input1[] = keymap.nextLine().split(" ");
+        String[] input1 = keymap.nextLine().split(" ");
         int numHome = Integer.parseInt(input1[0]);
         int numOrder = Integer.parseInt(input1[1]);
 
-        String input2[] = keymap.nextLine().split(" ");
+        String[] input2 = keymap.nextLine().split(" ");
         for (int i = 0; i < numHome; i++) {
             home.add(Integer.parseInt(input2[i]));
         }
 
-        String input3[] = keymap.nextLine().split(" ");
+        String[] input3 = keymap.nextLine().split(" ");
         for (int i = 0; i < numOrder; i++) {
             order.add(Integer.parseInt(input3[i]));
         }
 
         int count = 0, time = 0, position = 0;
         while (count < numOrder) {
-            if (home.get(position) == order.get(count)) {
+            if (Objects.equals(home.get(position), order.get(count))) {
                 count++;
                 time--;
             } else if (home.get(position) < order.get(count)) {

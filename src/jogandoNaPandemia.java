@@ -8,14 +8,14 @@ import static java.lang.Integer.parseInt;
 */
 
 public class jogandoNaPandemia {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         sc.nextLine();
-        int mat[][] = new int[N][N];
+        int[][] mat = new int[N][N];
 
         for (int i = 0; i < N; i++) {
-            String line[] = sc.nextLine().split(" ");
+            String[] line = sc.nextLine().split(" ");
             for (int j = 0; j < N; j++) {
                 mat[i][j] = parseInt(line[j]);
             }

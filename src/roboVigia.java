@@ -21,16 +21,16 @@ public class roboVigia {
         return 1;
     }
 
-    public static void main(String arg[]) {
+    public static void main(String[] arg) {
         Scanner sc = new Scanner(System.in);
 
-        String firstLineStr[] = sc.nextLine().split(" ");
+        String[] firstLineStr = sc.nextLine().split(" ");
         int N = parseInt(firstLineStr[0]);
         int C = parseInt(firstLineStr[1]);
         int E = parseInt(firstLineStr[2]);
 
-        String secondLineStr[] = sc.nextLine().split(" ");
-        int secondLineInt[] = new int[C];
+        String[] secondLineStr = sc.nextLine().split(" ");
+        int[] secondLineInt = new int[C];
         for (int i = 0; i < C; i++) {
             secondLineInt[i] = parseInt(secondLineStr[i]);
         }

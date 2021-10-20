@@ -8,15 +8,15 @@ import java.util.Scanner;
 */
 
 public class sorteNoSorteio {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner keymap = new Scanner(System.in);
         ArrayList<Integer> competitors = new ArrayList<>();
-        Boolean loop = true;
+        boolean loop = true;
         int phase = 0;
 
-        String input[] = keymap.nextLine().split(" ");
-        for (int i = 0; i < input.length; i++) {
-            competitors.add(Integer.parseInt(input[i]));
+        String[] input = keymap.nextLine().split(" ");
+        for (String s : input) {
+            competitors.add(Integer.parseInt(s));
         }
 
         for (int i = 0; i < 4; i++) {
@@ -34,7 +34,6 @@ public class sorteNoSorteio {
                 }
             } else if (competitors.get(0) == 1 && competitors.get(1) == 9
                     || competitors.get(0) == 9 && competitors.get(1) == 1) {
-                loop = false;
                 break;
             }
             if (loop) {
@@ -48,7 +47,7 @@ public class sorteNoSorteio {
             System.out.println("quartas");
         } else if (phase == 2) {
             System.out.println("semifinal");
-        } else if (phase == 3) {
+        } else {
             System.out.println("final");
         }
 
